@@ -1,0 +1,12 @@
+# Secretos: la API key nunca debe acabar en git.
+.env
+
+# Entorno virtual y cachés de Python
+.venv/
+__pycache__/
+
+# Datos y resultados pesados o regenerables
+data/videos/
+outputs/
+*.pt
+runs/

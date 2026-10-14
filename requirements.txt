@@ -1,0 +1,9 @@
+# Versiones exactas con las que se ha probado el proyecto (macOS, Apple Silicon, Python 3.13).
+ultralytics==8.4.177  # YOLO + ByteTrack (instala también PyTorch)
+opencv-python==5.0.0.93  # leer vídeo y dibujar el overlay
+python-dotenv==1.2.4  # leer OPENAI_API_KEY desde .env
+openai==3.29.0  # SDK con client.decisions (la Decisions API necesita >= 3.26.0)
+# Lo necesita ByteTrack (tracking de Ultralytics) para emparejar cajas; no se importa directamente
+lap==0.5.13
+# Solo para descargar vídeos de prueba (scripts/download_videos.py), no lo usa el copiloto
+huggingface_hub==2.2.0
